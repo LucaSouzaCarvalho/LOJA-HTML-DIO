@@ -6,6 +6,7 @@ body {
     background-color: snow;
     display: flex;
     justify-content: center;
+    font-family: arial;
 }
 
 .wrapper {
@@ -28,9 +29,14 @@ body {
 }
 
 .header {
-    background-color: rgb(5, 108, 108);
+    background-color: snow;
     min-height: 150px;
     padding: 20px;
+    display: flex;
+}
+
+.header .title{
+    padding: 65px;
 }
 
 .content {
@@ -39,9 +45,28 @@ body {
     padding: 20px;
 }
 
+.main .content h3{
+    text-align: center;
+}
+
 .footer {
-    background-color: rgb(99, 56, 240);
+    display: flex;
+    background-color: rgb(250, 97, 42);
     min-height: 150px;
+    color: white;
+}
+
+.footer .map{
+    padding: 10px;
+}
+
+.footer .Contato{
+    padding-left: 300px;
+}
+
+.footer .Contato .form-contato{
+    width: 250px;
+    align-items: center;
 }
 
 ul {
@@ -69,13 +94,38 @@ ul li a {
     text-decoration: none;
     color: white;
     background: rgb(250, 97, 42);
-    padding: 5px;
-    border: 1px solid #ccc;
+    padding:7px;
+    border: 1px solid white;
 }
 
 ul li a:hover{
-    text-decoration:underline;
     font-weight: bold;
     background: #dc5608; 
+}
+
+.content .table{
+    -webkit-box-shadow: 31px 17px 26px -11px rgba(0,0,0,0.3);
+    -moz-box-shadow: 31px 17px 26px -11px rgba(0,0,0,0.3);
+    box-shadow: 31px 17px 26px -11px rgba(0,0,0,0.3);
+    border: solid 1px;
+    border-color: #dc5608;
+}
+
+.content .table th{
+    background-color: #dc5608;
+    color: white;
+}
+
+.content .table th, td{
+    padding: 10px;
+}
+
+.content .table tr:hover {
+    background-color: #dc5608;
+    color: white;
+}
+
+.content .table tr:hover {
+    cursor: pointer;
 }
 
